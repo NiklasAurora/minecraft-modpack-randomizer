@@ -29,3 +29,13 @@ This tool will help you randomize a modpack with a set amount of mods at a set v
 * Host pre-fetched JSON to save requests to CurseForge (updates every 24 hour)
 * Get X amount of random mods from that JSON
 * Generate a `manifest.json` so that users can import the modpack in the Twitch Launcher
+
+## Credits
+
+This project is not affiliated with, funded, or in any way associated with CurseForge or Mojang.
+
+[Licensed under MIT](LICENSE.md)
+
+```
+Niklas 'Aurora' Andersson
+```
