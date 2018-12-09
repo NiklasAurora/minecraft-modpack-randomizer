@@ -30,6 +30,20 @@ This tool will help you randomize a modpack with a set amount of mods at a set v
 - [ ] Get X amount of random mods from that JSON
 - [ ] Generate a `manifest.json` so that users can import the modpack in the Twitch Launcher
 
+## Example JSON
+
+```json
+{
+    "id": 32274,
+    "name": "JourneyMap",
+    "author_id": 7577665,
+    "category": "Map and Information",
+    "description": "Real-time mapping in-game or your browser as you explore.",
+    "downloads": 41885956,
+    "link": "https://www.curseforge.com/minecraft/mc-mods/journeymap"
+}
+```
+
 ## Credits
 
 This project is not affiliated with, funded, or in any way associated with CurseForge or Mojang.
