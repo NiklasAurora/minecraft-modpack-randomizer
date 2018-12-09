@@ -19,8 +19,10 @@ This tool will help you randomize a modpack with a set amount of mods at a set v
 - [x] Fetch JSON from `minecraft.curseforge.com` which includes:
     - `id` - ID of the mod on CurseForge
     - `name` - Name of the mod
+    - `author_id` - ID of the author of the mod
     - `category` - Which category it belongs to on CurseForge
     - `description` - The description provided for the mod
+    - `downloads` - Amount of downloads
     - `link` - Link to the CurseForge page for the mod
 
 - [ ] Use cache on already fetched list of mods
