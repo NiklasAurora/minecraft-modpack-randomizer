@@ -9,10 +9,31 @@ This tool will help you randomize a modpack with a set amount of mods at a set v
 
 ## Getting started
 
-* `git clone LINK`
+### Installation
+
+* `git clone git@github.com:AuroraBTH/minecraft-modpack-randomizer.git`
 * `cd minecraft-modpack-randomizer`
 * `python3 -m pip install -r requirements.txt`
-* `python3 main.py`
+
+### Running
+
+Running `python3 main.py` will ask you for a Minecraft Version (1.7.10 or 1.12.2 for now) and where you would like to save the data (default is `data.json`).
+
+Progress is shown by "`currentPage/totalAmountOfPages (%)`" (ex: `Done with page 187/191 (97.91%)`). When the program is done running, it will print the total amount of mods indexed and where it was saved (as a reminder).
+
+#### Speed
+
+By running `time python3 main.py`, I got the following result on my work PC:
+
+```
+Done indexing 3804 mods, see modlist_1_7_10.json for more details.
+
+real    7m37.852s
+user    0m19.875s
+sys     0m0.984s
+```
+
+Which gives an average of 8.3s/mod for fetching all 1.7.10 mods. 
 
 ## Features
 
@@ -25,7 +46,7 @@ This tool will help you randomize a modpack with a set amount of mods at a set v
     - `downloads` - Amount of downloads
     - `link` - Link to the CurseForge page for the mod
 
-- [ ] Use cache on already fetched list of mods
+- [x] Use cache on already fetched list of mods
 - [ ] Host pre-fetched JSON to save requests to CurseForge (updates every 24 hour)
 - [ ] Get X amount of random mods from that JSON
 - [ ] Generate a `manifest.json` so that users can import the modpack in the Twitch Launcher
