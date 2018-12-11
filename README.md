@@ -33,7 +33,7 @@ user    0m19.875s
 sys     0m0.984s
 ```
 
-Which gives an average of 8.3s/mod for fetching all 1.7.10 mods. 
+Which gives an average of 8.3 mod/s when fetching all 1.7.10 mods. 
 
 ## Features
 
