@@ -58,13 +58,16 @@ def write_mods_to_json(minecraft_version, file_name):
             mod_data["link"] = domain + project_link
 
             mod_list.append(mod_data)
-        
+            
+        progress_percent = round((page_number / amount_of_pages) * 100, 2)
+        print("Done with page " + str(page_number) + "/" + str(amount_of_pages) + " (" + str(progress_percent) + "%)")
         page_number = page_number + 1
 
     with open(file_name, "w") as f:
+        amount_of_mods = len(mod_list)
         pretty_json = json.loads(json.JSONEncoder().encode(mod_list))
         f.write(json.dumps(pretty_json, indent=4))
-        print("Done, see " + file_name + " for your list.")
+        print("Done indexing " + str(amount_of_mods) + " mods, see " + file_name + " for more details.")
 
 user_version = input("0: 1.7.10\n1: 1.12.2\n_________\n->")
 file_name = input("Name on file output (default is data.json):\n->")
@@ -78,4 +81,3 @@ if user_version == "0":
 elif user_version == "1":
     minecraft_1_12_2 = "2020709689%3A6756"
     write_mods_to_json(minecraft_1_12_2, file_name)
-
